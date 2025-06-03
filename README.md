@@ -29,7 +29,11 @@ CQRS is a design pattern that separates the models for reading and writing data,
 - **Event Store**: Persist events (using Axon’s event store)
 - **Projections**: Build and maintain read models from events
 
-![CQRS Architecture Diagram](https://raw.githubusercontent.com/bruce-mig/axon-cqrs/main/docs/cqrs-architecture.png)
+![CQRS Architecture Diagram](cqrs-api.png)
+
+## API Flow
+
+![](api-flow.png)
 
 ## Features
 
