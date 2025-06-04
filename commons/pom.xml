@@ -8,9 +8,9 @@
 		<version>3.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.bruce-migeri.axon-cqrs</groupId>
+	<groupId>com.github.bruce-mig.axon-cqrs</groupId>
 	<artifactId>commons</artifactId>
-	<version>1.0.0</version>
+	<version>1.3.5</version>
 	<name>commons</name>
 	<description>Commons Service</description>
 	<url/>
