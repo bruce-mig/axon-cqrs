@@ -1,4 +1,4 @@
-package com.github.bruce_mig.command_service.command.api.events;
+package com.github.bruce_mig.axon_cqrs.commons.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
