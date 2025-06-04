@@ -127,6 +127,16 @@ CQRS is a design pattern that separates the models for reading and writing data,
 
 Use tools like [Postman](https://www.postman.com/) or `curl` to interact with the API.
 
+## TODO
+
+A comprehensive list of technical TODOs is maintained in [TODO.md](./TODO.md).
+
+### High-level tasks
+
+- [ ] Handle errors more gracefully throughout the application
+- [ ] Create Dockerfiles for the command and query services
+- [ ] Implement a CI pipeline to build Docker images and publish them to a container registry
+
 ## Contributing
 
 Contributions are welcome! Feel free to fork the repo and submit a pull request.
