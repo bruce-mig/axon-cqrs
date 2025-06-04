@@ -1,4 +1,4 @@
-package com.github.bruce_mig.command_service.command.api.model;
+package com.github.bruce_mig.axon_cqrs.commons.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Builder
 public class ProductRestModel {
+    private String productId;
     private String name;
     private BigDecimal price;
     private Integer quantity;
