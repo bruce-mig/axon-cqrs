@@ -1,6 +1,6 @@
-# Products Service with CQRS using Axon Framework
+# CQRS using Axon Framework
 
-This repository implements the **Command Query Responsibility Segregation (CQRS)** design pattern using the [Axon Framework](https://axoniq.io/). The application is focused on a simple products service, providing a clear example of how to structure Java applications with CQRS and Event Sourcing.
+This repository implements the **Command Query Responsibility Segregation (CQRS)** design pattern using the Axon Framework. The application is focused on a products service, providing a clear example of how to structure Java applications with CQRS and Event Sourcing.
 
 ## Table of Contents
 
@@ -74,15 +74,27 @@ CQRS is a design pattern that separates the models for reading and writing data,
 
 3. **Build the project**
    ```bash
-   cd product-service
+   # Command Service
+   cd cmd-service
+   mvn clean install
+   
+   # Query Service
+   cd query-service
    mvn clean install
    ```
 4. **Run the application**
    ```bash
+   # Command Service
+   cd cmd-service
+   mvn spring-boot:run
+   
+   # Query Service
+   cd query-service
    mvn spring-boot:run
    ```
 
-   The application will start on `http://localhost:8081`.
+   The command application will start on `http://localhost:8081`.
+   The query application will start on `http://localhost:8085`.
 
 ### Configuration
 
@@ -100,13 +112,17 @@ CQRS is a design pattern that separates the models for reading and writing data,
 
 ## Usage
 
-### Example API Endpoints
+### Example Command API Endpoints
 
-- `POST /products` – Create a new product (Command)
+- `POST /commands/products` – Create a new product (Command)
 
-[//]: # (- `PUT /products/{id}` – Update product details &#40;Command&#41;)
+- `PATCH /commands/products/{productId}` – Update product details (Command)
+- 
+- `DELETE /commands/products/{productId}` – Update product details (Command)
 
-[//]: # (- `GET /products/{id}` – Get product details &#40;Query&#41;)
+### Example Query API Endpoints
+
+- `GET /products/{productId}` – Get product details (Query)
 - `GET /products` – List all products (Query)
 
 Use tools like [Postman](https://www.postman.com/) or `curl` to interact with the API.
