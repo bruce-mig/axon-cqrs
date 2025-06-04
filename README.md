@@ -117,7 +117,7 @@ CQRS is a design pattern that separates the models for reading and writing data,
 - `POST /commands/products` – Create a new product (Command)
 
 - `PATCH /commands/products/{productId}` – Update product details (Command)
-- 
+
 - `DELETE /commands/products/{productId}` – Update product details (Command)
 
 ### Example Query API Endpoints
