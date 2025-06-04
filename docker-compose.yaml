@@ -11,7 +11,7 @@ services:
     container_name: command_postgres
     image: postgres:17.2
     environment:
-      POSTGRES_DB: productsdb
+      POSTGRES_DB: commandsdb
       POSTGRES_USER: user1
       POSTGRES_PASSWORD: pass
     ports:
@@ -22,7 +22,7 @@ services:
     container_name: query_postgres
     image: postgres:17.2
     environment:
-      POSTGRES_DB: productsdb
+      POSTGRES_DB: queriesdb
       POSTGRES_USER: user1
       POSTGRES_PASSWORD: pass
     ports:
